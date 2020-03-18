@@ -5,14 +5,17 @@ A tool for coordinating a loosely-centralized mutual aid network.
 MVP features (final naming TBD):
 
 - [ ] `User` can sign up to help (contact info required)
+- [ ] User can hav `admin` role
+- [ ] Admin dashboard restricted to admin users user can administer all objects
 - [ ] User can make a request (a `Request`) with a location + notes - they are now a requestor
-- [ ] Helping user can see nearby requests and mark themselves as the responder (v1: search by postal code)
-- [ ] Both helping requester and responder can mark the need 'fulfilled'
-- [ ] Admin user can administer all objects
+- [ ] Helping user can see nearby requests (v1: search by postal code)
+- [ ] User can mark themselves as the responder (`Fulfillment` joins `request` + `user`)
+- [ ] Admin can contact requestor and responder to mark a fulfillment complete
 - [ ] Users can contact admins with issues
 
 Post-MVP:
 
+- Create requests without creating an account (perhaps a minimal user that only has a phone number?)
 - Admins can designate regions - a collection of zip codes
 - Ability to look up needs by location, including current location
 - Visibility into level of need by area
