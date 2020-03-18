@@ -1,3 +1,5 @@
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](code_of_conduct.md)
+
 # Mutual-Aid-in-a-Box
 
 A tool for coordinating a loosely-centralized mutual aid network.
@@ -35,3 +37,9 @@ You'll need
 3. Set up database: `rails db:setup && rails db:migrate`
 4. Run tests: `bundle exec rails spec`
 5. Run server: `bundle exec rails s`
+
+## Contributing
+
+Please note that this project is released with a Contributor Code of Conduct (the [Contributors Covenant](https://www.contributor-covenant.org/)). By participating in this project you agree to abide by its terms. See [CONTRIBUTORS.md](CONTRIBUTORS.md) for details.
+
+This project is licenced under the [Hippocratic License](https://firstdonoharm.dev/).
