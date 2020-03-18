@@ -1,24 +1,34 @@
-# README
+# Mutual-Aid-in-a-Box
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A tool for coordinating a loosely-centralized mutual aid network.
 
-Things you may want to cover:
+MVP features (final naming TBD):
 
-* Ruby version
+- [ ] `User` can sign up to help (contact info required)
+- [ ] User can make a request (a `Request`) with a location + notes - they are now a requestor
+- [ ] Helping user can see nearby requests and mark themselves as the responder (v1: search by postal code)
+- [ ] Both helping requester and responder can mark the need 'fulfilled'
+- [ ] Admin user can administer all objects
+- [ ] Users can contact admins with issues
 
-* System dependencies
+Post-MVP:
 
-* Configuration
+- Admins can designate regions - a collection of zip codes
+- Ability to look up needs by location, including current location
+- Visibility into level of need by area
+- A supposed response can be marked unfulfilled
+- User stats are visible somewhere, maybe only to them and admins, re fulfillments vs abandoned fulfillments
 
-* Database creation
+## Development setup
 
-* Database initialization
+You'll need
 
-* How to run the test suite
+- ruby 2.6.1 (with bundler)
+- node 12.14.1 (with yarn)
+- a running postgresql server
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+1. Clone + enter this repo
+2. Install dependencies: `bundle install && yarn`
+3. Set up database: `rails db:setup && rails db:migrate`
+4. Run tests: `bundle exec rails spec`
+5. Run server: `bundle exec rails s`
