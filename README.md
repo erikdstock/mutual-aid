@@ -2,7 +2,7 @@
 
 # Mutual-Aid-in-a-Box
 
-A tool for coordinating a loosely-centralized mutual aid network.
+A tool for coordinating a loosely-centralized mutual aid network. This app is intended to be deployed and administered by a team in a specific locality. **It is also a _toy_ app at this point (absent rigorous security and UX testing as well as explicit policies around privacy and user consent).**
 
 MVP features (final naming TBD):
 
